@@ -8,7 +8,12 @@ def fibonacci(n):
 
 
 def lucas(n):
-    return 1
+    if n == 0:
+        return 2
+    elif n == 1:
+        return 1
+    else:
+        return lucas(n - 1) + lucas(n - 2)
 
 
 def sum_series(n, first=0, second=1):
